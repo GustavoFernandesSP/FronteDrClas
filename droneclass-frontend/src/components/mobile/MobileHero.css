@@ -1,0 +1,65 @@
+.mobile-hero {
+  min-height: 520px;
+  margin: 16px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.85)),
+    url("../../../public/imagens/nazgul.jpeg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.ParagrafoSobreCurso{
+  color: #137fec;
+  font-weight: bold;
+}
+
+.mobile-hero__content {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+
+  color: #fff;
+}
+
+.badge {
+  background: #137fec;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primary {
+  height: 48px;
+  background: #137fec;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+.secondary {
+  height: 48px;
+  background: rgba(255,255,255,.15);
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,.25);
+}

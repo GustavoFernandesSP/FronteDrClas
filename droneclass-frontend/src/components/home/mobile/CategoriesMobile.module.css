@@ -1,0 +1,21 @@
+.section {
+  padding: 24px 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  gap: 12px;
+
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}

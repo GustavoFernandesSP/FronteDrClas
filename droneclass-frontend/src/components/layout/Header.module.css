@@ -1,0 +1,59 @@
+.header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(246, 247, 248, 0.85);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(19,127,236,.1);
+  color: #137fec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+}
+
+.login {
+  background: #137fec;
+  color: white;
+  border: none;
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+}

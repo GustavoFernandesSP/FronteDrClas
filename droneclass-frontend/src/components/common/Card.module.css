@@ -1,0 +1,32 @@
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 1.25rem;
+}
+
+.content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.content p {
+  margin-top: .5rem;
+  color: #475569;
+  font-size: .95rem;
+}
