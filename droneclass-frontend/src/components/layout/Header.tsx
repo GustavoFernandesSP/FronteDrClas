@@ -18,11 +18,11 @@ export function Header() {
         </div>
 
         <nav className={styles.nav}>
-          <a href="#">Home</a>
-          <a href="#">Cursos</a>
-          <a href="#">Builds</a>
-          <a href="#">DroneWork</a>
-          <a href="#">Loja</a>
+          <Link to="/">Home</Link>
+          <Link to="/cursos">Cursos</Link>
+          <Link to="/builds">Builds</Link>
+          <Link to="/droneWork">DroneWork</Link>
+          <Link to="/loja">Loja</Link>
         </nav>
 
         <Link to="/auth" className={styles.login}>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './MobileHeader.module.css'
 import logo from '../../assets/imagens/DroneClass.png'
 
@@ -28,11 +29,22 @@ export function MobileHeader() {
 
       {/* MENU MOBILE */}
       <nav className={`${styles.nav} ${open ? styles.open : ''}`}>
-        <a href="#">Home</a>
-        <a href="#">Cursos</a>
-        <a href="#">Builds</a>
-        <a href="#">DroneWork</a>
-        <a href="#">Loja</a>
+        <Link to="/">Home</Link>
+        <Link to="/cursos">Cursos</Link>
+        <Link to="/builds">Builds</Link>
+        <Link to="/droneWork">DroneWork</Link>
+        <Link to="/loja">Loja</Link>
+
+        {/* 🔑 BOTÃO LOGIN NO FINAL */}
+        <div className={styles.loginWrapper}>
+          <Link
+            to="/auth"
+            className={styles.login}
+            onClick={() => setOpen(false)}
+          >
+            Login / Cadastro
+          </Link>
+        </div>
       </nav>
     </>
   )
