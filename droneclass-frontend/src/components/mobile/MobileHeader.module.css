@@ -1,36 +1,84 @@
+/* HEADER */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-
+  height: 64px;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  height: 64px;
-  padding: 0 16px;
-
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid #e5e7eb;
+  background: rgba(246, 247, 248, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 60;
 }
 
+/* BRAND */
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: -20rem;
+}
 
-  font-size: 18px;
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.brand strong {
+  font-size: 1.1rem;
   font-weight: 700;
+  color: #0f172a;
 }
 
-.icon {
-  font-size: 22px;
-}
-
+/* MENU BUTTON */
 .menu {
-  font-size: 22px;
+  font-size: 1.6rem;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+/* NAV MOBILE */
+.nav {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  z-index: 59;
+
+  background: rgba(246, 247, 248, 0.97);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  /* ANIMAÇÃO */
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+/* QUANDO ABERTO */
+.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.nav a:hover {
+  color: #137fec;
 }

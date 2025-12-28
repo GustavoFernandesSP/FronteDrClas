@@ -1,4 +1,6 @@
 import styles from './Header.module.css'
+import logo from '../../assets/imagens/DroneClass.png'
+
 
 export function Header() {
   return (
@@ -6,9 +8,11 @@ export function Header() {
       <div className={styles.container}>
 
         <div className={styles.logo}>
-          <div className={styles.icon}>
-            <span className="material-symbols-outlined">mode_fan</span>
-          </div>
+          <img
+            src={logo}
+            alt="DroneClass"
+            className={styles.logoImage}
+          />
           <span className={styles.brand}>DroneClass</span>
         </div>
 
@@ -20,7 +24,9 @@ export function Header() {
           <a href="#">Contato</a>
         </nav>
 
-        <button className={styles.login}>Login / Cadastro</button>
+        <button className={styles.login}>
+          Login / Cadastro
+        </button>
 
       </div>
     </header>
