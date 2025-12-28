@@ -1,5 +1,6 @@
 import styles from './Header.module.css'
 import logo from '../../assets/imagens/DroneClass.png'
+import { Link } from 'react-router-dom'
 
 
 export function Header() {
@@ -20,13 +21,13 @@ export function Header() {
           <a href="#">Home</a>
           <a href="#">Cursos</a>
           <a href="#">Builds</a>
-          <a href="#">Comunidade</a>
-          <a href="#">Contato</a>
+          <a href="#">DroneWork</a>
+          <a href="#">Loja</a>
         </nav>
 
-        <button className={styles.login}>
-          Login / Cadastro
-        </button>
+        <Link to="/auth" className={styles.login}>
+         Login / Cadastro
+        </Link>
 
       </div>
     </header>

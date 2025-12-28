@@ -1,12 +1,12 @@
-import { MobileLayout } from '../components/layout/MobileLayout'
+import { AppLayout } from '../components/layout/AppLayout'
 import { MobileHero } from '../components/mobile/MobileHero'
 import { CategoriesMobile } from '../components/home/mobile/CategoriesMobile'
 
 export function HomeMobile() {
   return (
-    <MobileLayout>
+    <AppLayout>
        <MobileHero />
       <CategoriesMobile />
-    </MobileLayout>
+    </AppLayout>
   )
 }

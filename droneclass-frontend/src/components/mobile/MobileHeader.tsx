@@ -31,8 +31,8 @@ export function MobileHeader() {
         <a href="#">Home</a>
         <a href="#">Cursos</a>
         <a href="#">Builds</a>
-        <a href="#">Comunidade</a>
-        <a href="#">Contato</a>
+        <a href="#">DroneWork</a>
+        <a href="#">Loja</a>
       </nav>
     </>
   )
